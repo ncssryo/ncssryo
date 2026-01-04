@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCCSRYO MATTER | Private Vault</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login-screen" class="container">
+        <div class="logo">🔐</div>
+        <h1>NCCSRYO MATTER</h1>
+        <p>Access Restricted. Enter your Master Key:</p>
+        <input type="password" id="password-input" placeholder="Enter password...">
+        <button onclick="checkLogin()">UNLOCK SYSTEM</button>
+    </div>
+
+    <div id="main-content" class="container hidden">
+        <header>
+            <h2>SYSTEM UNLOCKED</h2>
+            <p>Welcome back, Nccsryo.</p>
+        </header>
+
+        <div class="content-grid">
+            <div class="info-card">
+                <h3>📱 Social Accounts</h3>
+                <p><b>Instagram:</b> @nccsryo (Pass: your_insta_pass)</p>
+                <p><b>Telegram:</b> @nccsryo (Pass: your_tg_pass)</p>
+            </div>
+            
+            <div class="info-card">
+                <h3>🔑 Other Passwords</h3>
+                <p><b>Email:</b> example@mail.com (Pass: mail_pass)</p>
+                <p><b>WiFi:</b> my_home_wifi (Pass: wifi_pass)</p>
+            </div>
+
+            <div class="info-card">
+                <h3>🖼 Personal Gallery</h3>
+                <img src="myphoto.jpg" alt="Your Photo" style="width:100%; border-radius:10px; margin-top:10px;">
+            </div>
+        </div>
+
+        <button onclick="logout()" class="exit-btn">LOCK VAULT</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
